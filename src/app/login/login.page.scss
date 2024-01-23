@@ -1,0 +1,28 @@
+ion-avatar{
+  width: 102px;
+  height: 102px;
+}
+
+.container{
+  display: flex;
+  height: 95vh;
+}
+
+.container {
+  .ion-content{
+    width: 92%;
+}}
+
+button{
+  margin: 20px 0;
+}
+
+ion-card{
+  border-radius: 15px;
+}
+
+ion-card-content form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

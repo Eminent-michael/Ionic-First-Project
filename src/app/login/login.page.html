@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="container ion-justify-content-center ion-align-items-center">
+  <div class="ion-content">
+    <ion-card>
+      <ion-card-header class="ion-justify-content-center ion-align-items-center">
+        <ion-avatar>
+          <img src="https://img.freepik.com/premium-photo/anime-male-avatar_950633-917.jpg?w=740" alt="">
+        </ion-avatar>
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="loginForm">
+          <!-- <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input matInput
+              placeholder="Username"
+              type="text"
+              required>
+          </mat-form-field> -->
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput
+              placeholder="example@example.com"
+              type="email"
+              required
+              formControlName="EmailId"
+              value="shile@gmail.com"
+              >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input matInput
+              type="password"
+              required
+              formControlName="Password"
+              value="admin"
+              >
+            <mat-hint>Password must be 8 characters</mat-hint>
+          </mat-form-field>
+
+
+          <button mat-flat-button
+            color="primary" (click)="$event.preventDefault; onLogin()">Login</button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</div>
